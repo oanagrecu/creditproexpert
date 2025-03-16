@@ -1,0 +1,15 @@
+nav {
+  background: #0077b6;
+  padding: 10px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
