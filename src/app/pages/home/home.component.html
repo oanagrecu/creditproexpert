@@ -1,4 +1,200 @@
-<div class="container">
-  <h1>Welcome to Assurance Company</h1>
-  <p>Your trusted partner in insurance solutions.</p>
-</div>
+<!-- Hero Section -->
+<header class="hero text-center">
+  <div class="container">
+    <h1 class="display-4">Protect What Matters Most</h1>
+    <p class="lead">Reliable insurance solutions tailored for you.</p>
+    <a routerLink="/services" id="service-btn" class="btn btn-light btn-lg"
+      >Explore Services</a
+    >
+  </div>
+</header>
+
+<main>
+  <!-- About Section -->
+  <section class="about py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>About Our Company</h2>
+          <p>
+            CreditProExpert is dedicated to providing the best insurance
+            solutions for individuals and businesses. Our team of experienced
+            agents works hard to offer tailored services that meet your specific
+            needs. Whether it's life insurance, health insurance, or property
+            coverage, we're here to protect what matters most to you.
+          </p>
+          <a routerLink="/contact" class="btn btn-primary">Contact Us</a>
+        </div>
+        <div class="col-md-6">
+          <img
+            src="./logo1.png"
+            class="img-fluid rounded"
+            alt="CreditProExpert Logo"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="services bg-light py-2">
+    <div class="container text-center">
+      <h2>Our Services</h2>
+      <div class="row mt-4">
+        <div class="col-md-3">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div class="mb-3">
+                <i class="fas fa-life-ring fa-3x"></i>
+              </div>
+              <h5 class="card-title">Life Insurance</h5>
+              <p class="card-text">
+                Secure your family's future with our comprehensive life
+                insurance plans.
+              </p>
+              <a
+                routerLink="/services"
+                [fragment]="'life-insurance'"
+                class="btn btn-primary"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div class="mb-3">
+                <i class="fas fa-heartbeat fa-3x"></i>
+              </div>
+              <h5 class="card-title">Health Insurance</h5>
+              <p class="card-text">
+                Get medical coverage that ensures you receive the best care.
+              </p>
+              <a
+                routerLink="/services"
+                [fragment]="'health-insurance'"
+                class="btn btn-primary"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div class="mb-3">
+                <i class="fas fa-car fa-3x"></i>
+              </div>
+              <h5 class="card-title">Car Insurance</h5>
+              <p class="card-text">
+                Protect your vehicle with affordable and flexible coverage
+                options.
+              </p>
+              <a
+                routerLink="/services"
+                [fragment]="'car-insurance'"
+                class="btn btn-primary"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div class="mb-3">
+                <i class="fas fa-home fa-3x"></i>
+              </div>
+              <h5 class="card-title">Property Insurance</h5>
+              <p class="card-text">
+                Protect your home and belongings with comprehensive property
+                insurance coverage.
+              </p>
+              <a
+                routerLink="/services"
+                [fragment]="'property-insurance'"
+                class="btn btn-primary"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta text-center py-2 bg-primary text-white">
+    <div class="container">
+      <h2>Ready to Secure Your Future?</h2>
+      <p>
+        Contact us today for a free consultation and find the best plan for your
+        needs.
+      </p>
+      <a routerLink="/contact" class="btn btn-light btn-lg">Contact Us</a>
+
+      <div class="company-info">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-second text-dark shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Our Address</h5>
+                <p class="card-text">123 Main Street</p>
+                <p class="card-text">Cluj-Napoca</p>
+                <p class="card-text">Roumania</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card card-second text-dark shadow-sm">
+              <div class="card-body text-center">
+                <h5 class="card-title">Contact Our Agent</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    Bogdan Maicaneanu -
+                    <a href="tel:0748211214">0748 211 214</a>
+                  </li>
+                  <!-- <li>
+                    Jane Smith - <a href="tel:+19876543210">987-654-3210</a>
+                  </li>
+                  <li>
+                    Mark Johnson -
+                    <a href="tel:+15553456789">+1 (555) 345-6789</a>
+                  </li>
+                  <li>
+                    Lisa Brown -
+                    <a href="tel:+15559876543">+1 (555) 987-6543</a>
+                  </li>
+                  <li>
+                    James White -
+                    <a href="tel:+15551239876">+1 (555) 123-9876</a>
+                  </li>
+                  <li>
+                    Emily Davis -
+                    <a href="tel:+15557654321">+1 (555) 765-4321</a>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Schedule Card -->
+          <div class="col-md-4">
+            <div class="card card-second text-dark shadow-sm">
+              <div class="card-body text-center">
+                <h5 class="card-title">Working Hours</h5>
+                <p class="card-text">Mon-Fri: 9 AM - 6 PM</p>
+                <p class="card-text">Sat: 10 AM - 4 PM</p>
+                <p class="card-text">Sun: Closed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

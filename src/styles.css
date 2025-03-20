@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+/* Define core color variables */
+:root {
+  --primary-color: #0077b6;
+  --secondary-color: #0056b3;
+  --light-color: #f8f9fa;
+  --dark-color: #333;
+  --accent-color: #007bff;
+  --text-color: #555;
+  --heading-color: #007bff;
+  --body-text-color: #333;
+}
+
+/* Apply these to elements */
+body {
+  font-family: Arial, sans-serif;
+  color: var(--body-text-color);
+  background-color: var(--light-color);
+}
