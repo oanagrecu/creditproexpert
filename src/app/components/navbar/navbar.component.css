@@ -14,6 +14,7 @@ nav {
 
 nav .logo img {
   height: 80px;
+  margin-right: 50px;
 }
 
 .menu-toggle {
@@ -53,7 +54,11 @@ li a:hover {
   .menu-toggle {
     display: block;
   }
+  nav {
+    display: flex;
 
+    justify-content: space-between;
+  }
   nav ul {
     position: absolute;
     top: 62px;

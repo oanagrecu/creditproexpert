@@ -211,19 +211,23 @@ h2 {
 }
 
 /* Responsive Layout */
-@media (max-width: 768px) {
-  .company-info .card {
-    margin-bottom: 20px;
-  }
-}
 
 /* Responsive Adjustments */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .col-md-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
 @media (max-width: 768px) {
   .container,
   .container-fluid {
     padding: 20px;
   }
-
+  .company-info .card {
+    margin-bottom: 20px;
+  }
   .card-body {
     padding: 10px;
   }
