@@ -27,7 +27,6 @@
 
 .card-body {
   padding: 20px;
-  flex-grow: 1;
 }
 
 .card-title {
@@ -40,6 +39,7 @@
   font-size: 1rem;
   color: #555;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .card-body .btn {
@@ -51,7 +51,10 @@
   margin-top: auto;
   text-transform: uppercase;
 }
-
+.card-content {
+  flex-grow: 1;
+  height: 260px;
+}
 .card-body .btn:hover {
   background-color: #0056b3;
 }
@@ -87,7 +90,8 @@
 .img-fluid {
   width: 100%;
   height: auto;
-  margin-top: 90px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .container {
   max-width: 1200px;
@@ -165,5 +169,8 @@
   .service-section img {
     width: 100%;
     max-width: 500px;
+  }
+  .card-content {
+    flex-grow: 1;
   }
 }

@@ -33,7 +33,7 @@ body {
   background-position: center;
   /* background-attachment: fixed; */
   position: relative;
-  height: 640px;
+  height: 630px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,7 +62,7 @@ body {
   font-size: calc(1.475rem + 2.7vw);
   font-weight: 300;
   line-height: 1.2;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 /* Headings */
@@ -72,7 +72,7 @@ h3,
 h4,
 h6 {
   font-family: "Arial", sans-serif;
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 h2 {
@@ -87,7 +87,7 @@ h2 {
 /* Services Section */
 .services {
   background: #f8f9fa;
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 /* Card Styling */
@@ -96,8 +96,11 @@ h2 {
   border: none;
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  height: 350px;
+  height: 430px;
   margin-bottom: 30px;
+}
+.card-content {
+  flex-grow: 1;
 }
 
 .card:hover {
@@ -114,12 +117,17 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
 }
 
 .card-body p {
   color: var(--text-color);
 }
-
+.card-text {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  text-align: justify;
+}
 /* Buttons */
 .btn {
   display: inline-block;
@@ -178,7 +186,7 @@ h2 {
   transition: transform 0.3s ease-in-out;
 }
 .card-second {
-  height: 250px;
+  height: 230px;
   margin-bottom: 30px;
 }
 
@@ -197,9 +205,7 @@ h2 {
   font-weight: bold;
   margin-bottom: 1.25rem;
 }
-.cta .address {
-  text-align: left;
-}
+
 /* Contact and List Styling */
 .cta .company-info .list-unstyled {
   padding-left: 0;
@@ -213,7 +219,27 @@ h2 {
 /* Responsive Layout */
 
 /* Responsive Adjustments */
-
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 1.5rem;
+  }
+  .hero {
+    margin-top: 45px;
+    height: 400px;
+  }
+  .hero .container {
+    padding: 20px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+  #service-btn {
+    margin-bottom: 20px;
+  }
+}
 @media (min-width: 768px) and (max-width: 1024px) {
   .col-md-3 {
     flex: 0 0 50%;

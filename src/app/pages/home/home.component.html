@@ -1,33 +1,53 @@
 <!-- Hero Section -->
 <header class="hero text-center">
   <div class="container">
-    <h1 class="display-4">Protect What Matters Most</h1>
-    <p class="lead">Reliable insurance solutions tailored for you.</p>
+    <h2 class="display-4">Siguranța ta financiară,prioritatea noastră</h2>
+    <h2 class="display-4"></h2>
+    <p class="lead">Soluții de asigurare fiabile, adaptate pentru tine</p>
     <a routerLink="/services" id="service-btn" class="btn btn-light btn-lg"
-      >Explore Services</a
+      >Serviciile noastre</a
     >
   </div>
 </header>
 
 <main>
   <!-- About Section -->
-  <section class="about py-4">
+  <section class="about py-3">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <h2>About Our Company</h2>
+          <h2>Despre compania noastra</h2>
           <p>
-            CreditProExpert is dedicated to providing the best insurance
-            solutions for individuals and businesses. Our team of experienced
-            agents works hard to offer tailored services that meet your specific
-            needs. Whether it's life insurance, health insurance, or property
-            coverage, we're here to protect what matters most to you.
+            Suntem o platforma de creditare dezvoltată de
+            <strong>Credit Pro Expert</strong>, creată ca tu să găsești rapid,
+            ușor și în siguranță creditul potrivit.
           </p>
-          <a routerLink="/contact" class="btn btn-primary">Contact Us</a>
+          <h3>Ce facem?</h3>
+          <p>
+            Comparăm pentru tine ofertele celor mai importante instituții
+            financiare din România, ca să alegi cea mai avantajoasă soluție în
+            doar câteva minute, direct din confortul casei tale.
+          </p>
+          <p>
+            Ai acces la o gamă completă de produse: credite ipotecare, credite
+            de nevoi personale, refinanțări, linii de credit și multe altele.
+          </p>
+          <p>
+            Colaborăm cu o rețea extinsă de bănci, dar și cu brokeri de credite
+            dedicați, gata să te ajute pas cu pas. Procesul e simplu, fără
+            birocrație, fără stres.
+          </p>
+          <p>
+            Cu <strong>Credit Pro Expert</strong>, ai totul la un click
+            distanță, consultanță gratuită, oferte personalizate și sprijin
+            real, exact când ai nevoie.
+          </p>
+
+          <a routerLink="/contact" class="btn btn-primary">Contacteaza-ne</a>
         </div>
         <div class="col-md-6">
           <img
-            src="./logo4.png"
+            src="./logo.png"
             class="img-fluid rounded"
             alt="CreditProExpert Logo"
           />
@@ -37,26 +57,29 @@
   </section>
 
   <!-- Services Overview -->
-  <section class="services bg-light py-2">
+  <section class="services bg-light py-1">
     <div class="container text-center">
-      <h2>Our Services</h2>
+      <h2>Serviciile noastre</h2>
       <div class="row mt-4">
         <div class="col-md-3">
           <div class="card shadow-sm">
             <div class="card-body">
-              <div class="mb-3">
+              <div class="mb-2">
                 <i class="fas fa-life-ring fa-3x"></i>
               </div>
-              <h5 class="card-title">Life Insurance</h5>
-              <p class="card-text">
-                Secure your family's future with our comprehensive life
-                insurance plans.
-              </p>
+              <div class="card-content">
+                <h5 class="card-title">Credit de nevoi personale</h5>
+                <p class="card-text">
+                  Creditul de nevoi personale e ajutorul tău financiar de
+                  încredere, simplu și rapid, pentru orice plan ai în minte – de
+                  la mici dorințe la planuri mari.
+                </p>
+              </div>
               <a
                 routerLink="/services"
                 [fragment]="'life-insurance'"
                 class="btn btn-primary"
-                >Learn More</a
+                >Afla mai multe</a
               >
             </div>
           </div>
@@ -65,18 +88,23 @@
         <div class="col-md-3">
           <div class="card shadow-sm">
             <div class="card-body">
-              <div class="mb-3">
+              <div class="mb-2">
                 <i class="fas fa-heartbeat fa-3x"></i>
               </div>
-              <h5 class="card-title">Health Insurance</h5>
-              <p class="card-text">
-                Get medical coverage that ensures you receive the best care.
-              </p>
+
+              <div class="card-content">
+                <h5 class="card-title">Credit ipotecar</h5>
+                <p class="card-text">
+                  Creditul ipotecar e sprijinul financiar de care ai nevoie ca
+                  să-ți cumperi casa visurilor tale, cu rate accesibile și
+                  condiții flexibile, adaptate planurilor tale pe termen lung.
+                </p>
+              </div>
               <a
                 routerLink="/services"
                 [fragment]="'health-insurance'"
                 class="btn btn-primary"
-                >Learn More</a
+                >Afla mai multe</a
               >
             </div>
           </div>
@@ -85,19 +113,22 @@
         <div class="col-md-3">
           <div class="card shadow-sm">
             <div class="card-body">
-              <div class="mb-3">
+              <div class="mb-2">
                 <i class="fas fa-car fa-3x"></i>
               </div>
-              <h5 class="card-title">Car Insurance</h5>
-              <p class="card-text">
-                Protect your vehicle with affordable and flexible coverage
-                options.
-              </p>
+              <div class="card-content">
+                <h5 class="card-title">Refinantare credit ipotecar</h5>
+                <p class="card-text">
+                  Refinanțarea creditului ipotecar e alegerea smart prin care
+                  poți obține o rată mai bună, condiții mai avantajoase și un
+                  plus de confort financiar pentru casa ta.
+                </p>
+              </div>
               <a
                 routerLink="/services"
                 [fragment]="'car-insurance'"
                 class="btn btn-primary"
-                >Learn More</a
+                >Afla mai multe</a
               >
             </div>
           </div>
@@ -106,19 +137,25 @@
         <div class="col-md-3">
           <div class="card shadow-sm">
             <div class="card-body">
-              <div class="mb-3">
+              <div class="mb-2">
                 <i class="fas fa-home fa-3x"></i>
               </div>
-              <h5 class="card-title">Property Insurance</h5>
-              <p class="card-text">
-                Protect your home and belongings with comprehensive property
-                insurance coverage.
-              </p>
+              <div class="card-content">
+                <h5 class="card-title">
+                  Refinantare credit de nevoi personale
+                </h5>
+                <p class="card-text">
+                  Refinanțarea creditului de nevoi personale e soluția
+                  inteligentă prin care îți poți reduce rata lunară, aduce toate
+                  creditele într-unul singur și câștiga mai multă liniște
+                  financiară.
+                </p>
+              </div>
               <a
                 routerLink="/services"
                 [fragment]="'property-insurance'"
                 class="btn btn-primary"
-                >Learn More</a
+                >Afla mai multe</a
               >
             </div>
           </div>
@@ -129,22 +166,22 @@
 
   <section class="cta text-center py-2 bg-primary text-white">
     <div class="container">
-      <h2>Ready to Secure Your Future?</h2>
+      <h2>Ești pregătit să-ți asiguri viitorul?</h2>
       <p>
-        Contact us today for a free consultation and find the best plan for your
-        needs.
+        Contactează-ne astăzi pentru consultanta gratuită și găsește cel mai bun
+        plan pentru nevoile tale.
       </p>
-      <a routerLink="/contact" class="btn btn-light btn-lg">Contact Us</a>
+      <a routerLink="/contact" class="btn btn-light btn-lg">Contacteaza-ne</a>
 
       <div class="company-info">
         <div class="row">
           <div class="col-md-4">
             <div class="card card-second text-dark shadow-sm">
               <div class="card-body">
-                <h5 class="card-title">Our Address</h5>
-                <p class="card-text">123 Main Street</p>
-                <p class="card-text">Cluj-Napoca</p>
-                <p class="card-text">Roumania</p>
+                <h5 class="card-title">Adresa</h5>
+                <!-- <p class="card-text">123 Main Street</p> -->
+                <p class="card-text text-center">Cluj-Napoca</p>
+                <p class="card-text text-center">Romania</p>
               </div>
             </div>
           </div>
@@ -152,31 +189,15 @@
           <div class="col-md-4">
             <div class="card card-second text-dark shadow-sm">
               <div class="card-body text-center">
-                <h5 class="card-title">Contact Our Agent</h5>
+                <h5 class="card-title">Contacteaza agentii</h5>
                 <ul class="list-unstyled">
-                  <li>
+                  <li class="text-center">
                     Bogdan Maicaneanu -
                     <a href="tel:0748211214">0748 211 214</a>
                   </li>
                   <!-- <li>
                     Jane Smith - <a href="tel:+19876543210">987-654-3210</a>
-                  </li>
-                  <li>
-                    Mark Johnson -
-                    <a href="tel:+15553456789">+1 (555) 345-6789</a>
-                  </li>
-                  <li>
-                    Lisa Brown -
-                    <a href="tel:+15559876543">+1 (555) 987-6543</a>
-                  </li>
-                  <li>
-                    James White -
-                    <a href="tel:+15551239876">+1 (555) 123-9876</a>
-                  </li>
-                  <li>
-                    Emily Davis -
-                    <a href="tel:+15557654321">+1 (555) 765-4321</a>
-                  </li> -->
+                  </li>-->
                 </ul>
               </div>
             </div>
@@ -186,10 +207,10 @@
           <div class="col-md-4">
             <div class="card card-second text-dark shadow-sm">
               <div class="card-body text-center">
-                <h5 class="card-title">Working Hours</h5>
-                <p class="card-text">Mon-Fri: 9 AM - 6 PM</p>
-                <p class="card-text">Sat: 10 AM - 4 PM</p>
-                <p class="card-text">Sun: Closed</p>
+                <h5 class="card-title">Program</h5>
+                <p class="card-text text-center">Luni - Vineri: 9 AM - 5 PM</p>
+                <p class="card-text text-center">Sambata: Inchis</p>
+                <p class="card-text text-center">Duminica: Inchis</p>
               </div>
             </div>
           </div>
